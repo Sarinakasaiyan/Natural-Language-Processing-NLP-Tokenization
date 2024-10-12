@@ -1,4 +1,5 @@
 Text Tokenization with NLTK in Natural Language Processing
+![Uploading Screenshot 1403-07-21 at 17.13.41.png…]()
 
 This project demonstrates how to use the NLTK (Natural Language Toolkit) module for text tokenization. Tokenization is a fundamental step in Natural Language Processing (NLP) that divides text into smaller, processable units.
 
