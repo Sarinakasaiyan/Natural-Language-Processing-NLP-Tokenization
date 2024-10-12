@@ -1,58 +1,35 @@
 Text Tokenization with NLTK in Natural Language Processing
-![Uploading Screenshot 1403-07-21 at 17.13.41.png…]()
 
 This project demonstrates how to use the NLTK (Natural Language Toolkit) module for text tokenization. Tokenization is a fundamental step in Natural Language Processing (NLP) that divides text into smaller, processable units.
 
-nstallation and Setup
-First, we need to install NLTK and download the required data:
 
-input:
+[section 1]
 
-import nltk
-nltk.download('punkt')
+This code uses the NLTK library to tokenize a given sentence into individual words. It downloads the necessary data and prints the tokens, including words and punctuation marks, from the input string.
 
-output:
+[section 2]
 
-[nltk_data] Downloading package punkt to /root/nltk_data...
-[nltk_data]   Package punkt is already up-to-date!
-True
+This code uses the NLTK library to tokenize a sentence into individual words. After downloading the necessary data, it prints the tokens, which include only words and punctuation marks from the input string, while special characters like `\n` are ignored.
 
-Main Code
+[section 3]
 
-input:
+This code uses the NLTK library to tokenize a text into separate sentences. After downloading the necessary data, it prints the sentences from the input string, and special characters like `\n` are recognized as separate tokens.
 
-from nltk.tokenize import sent_tokenize,word_tokenize
-s =  "A SINGLE DAY CAN CHANGE YOUR ENTIRE LIFE ! [SARINAKASAIYAN]"
-w = word_tokenize(s)
-print(w)
+[section 4]
 
-output:
+This code uses the WordNet lemmatizer from the NLTK library to convert words to their base forms.
 
-['A', 'SINGLE', 'DAY', 'CAN', 'CHANGE', 'YOUR', 'ENTIRE', 'LIFE', '!', '[', 'SARINAKASAIYAN', ']']
+ Explanation:
+ 
+- Importing Libraries : The NLTK and WordNetLemmatizer modules are imported.
+- Creating an Instance : An instance of the WordNetLemmatizer is created.
+- Lemmatization:
+  - 'dogs' is reduced to 'dog'
+  - 'pianos' is converted to 'piano'
+  - 'python' remains unchanged
+  - 'cheaper' is lemmatized to 'cheap' (pos="a")
+  - 'better' remains 'better' (pos="n")
+  - 'playing' is reduced to 'play' (pos='v')
 
-Code Explanation
-We use word_tokenize to split the text into words.
-The sentence is stored in the variable s.
-We tokenize the text using word_tokenize(s).
-The result is printed.
-
-
-Output Analysis
-
-Each word is identified as a separate token.
-The punctuation mark (!) is also considered as a distinct token.
-Brackets and their content are recognized as separate tokens.
-
-Applications
-
-Tokenization is used in many NLP applications, including:
-Sentiment Analysis
-Text Classification
-Keyword Extraction
-Language Model Building
-
-Conclusion
-
-Tokenization with NLTK is a simple and effective method for breaking down text into processable components. 
-This technique provides a foundation for many more complex tasks in natural language processing.
-To use or develop this code further, please fork this repository or give it a star. We welcome any contributions or suggestions for improvement!
+ Summary:
+The code demonstrates how to use the WordNet lemmatizer to reduce words to their base forms while considering parts of speech.
