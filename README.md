@@ -8,9 +8,7 @@ This project demonstrates how to use the NLTK (Natural Language Toolkit) module 
 This code uses the NLTK library to tokenize a given sentence into individual words. It downloads the necessary data and prints the tokens, including words and punctuation marks, from the input string.
 
 
-<center>
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/f9374ee8-a30b-4b41-810e-bf791e367825">
-</center>
+<center><img width="452" alt="image" src="https://github.com/user-attachments/assets/f9374ee8-a30b-4b41-810e-bf791e367825"></center>
 
 
 
